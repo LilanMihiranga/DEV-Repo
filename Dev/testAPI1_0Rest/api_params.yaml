@@ -1,0 +1,21 @@
+environments:
+  - name: dev
+    endpoints:
+      production:
+        url: http://localhost:9443/testApi
+        config:
+          retryTimeOut: $RETRY
+      sandbox:
+        url: http://localhost:9443/testApi
+        config:
+          retryTimeOut: $RETRY        
+  - name: prod
+    endpoints:
+      production:
+        url: http://localhost:9444/testApi
+        config:
+          retryTimeOut: $RETRY      
+      sandbox:
+        url: http://localhost:9444/testApi
+        config:
+          retryTimeOut: $RETRY      
