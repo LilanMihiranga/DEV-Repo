@@ -1,0 +1,29 @@
+id:
+  providerName: admin
+  apiName: insuCrm1_0Rest
+  version: 1.0.0
+type: HTTP
+context: /insuCrm/1.0.0
+contextTemplate: /insuCrm/1.0.0
+availableTiers:
+- name: Unlimited
+status: CREATED
+visibility: public
+transports: http,https
+corsConfiguration:
+  corsConfigurationEnabled: true
+  accessControlAllowOrigins:
+  - '*'
+  accessControlAllowHeaders:
+  - authorization
+  - Access-Control-Allow-Origin
+  - Content-Type
+  - SOAPAction
+  accessControlAllowMethods:
+  - GET
+  - PUT
+  - POST
+  - DELETE
+  - PATCH
+  - OPTIONS
+endpointConfig: '{"endpoint_type":"http","production_endpoints":{"url":"https://www.google.com","config":null},"sandbox_endpoints":{"url":"https://www.google.com","config":null}}'
